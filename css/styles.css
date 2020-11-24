@@ -1,6 +1,6 @@
 /* 
 Orden de las propiedades de los selectores:
-1. Posicionamiento: static, relative, absolute, display, etc
+1. Posicionamiento: display, static, relative, absolute, etc
 2. Modelo caja: content(width,height,min/max) , padding, border, margin
 3. Tipografía: font-family, font-size, font-weight, line-height etc.
 4. Visuales: color, background,  border-radius, box-shadows, gradient, etc.
@@ -18,5 +18,5 @@ Orden de las propiedades de los selectores:
   --very-dark-gray: hsl(0, 0%, 27%);
 }
 html {
-  
+  font-size: 62.5%;
 }

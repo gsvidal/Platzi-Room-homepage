@@ -3,15 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta name= "description" content= "Welcome to ROOM, we provide unmatched quality, comfort, and style for property owners across the country.">
     <title>Room homepage</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
       <i class="icon-menu" id="burger-menu"></i>
-      <figure>
-        <img src="./images/logo.svg" alt="Logo Room">
-      </figure>
+      <div class="logo-img-container">
+        <img class="logo-img" src="./images/logo.svg" alt="Logo Room">
+      </div>
       <nav class="menu-nav none">
         <ul>
           <li>
@@ -29,10 +32,20 @@
         </ul>     
       </nav> 
     </header>
+    <main>
     <div class="hero-image-container">
-      <img class="hero-image" src="./images/mobile-image-hero-1.jpg" alt="Hero Image N° 1">
-      <img class="hero-image none" src="./images/mobile-image-hero-2.jpg" alt="Hero Image N° 2">
-      <img class="hero-image none" src="./images/mobile-image-hero-3.jpg" alt="Hero Image N° 3">
+      <picture>
+        <source srcset="./images/desktop-image-hero-1.jpg" media="(min-width: 1024px)" alt="Hero Desktop Image N° 1">
+        <img class="hero-image img1" src="./images/mobile-image-hero-1.jpg" alt="Hero Mobile Image N° 1">
+      </picture>
+      <picture>
+        <source srcset="./images/desktop-image-hero-2.jpg" media="(min-width: 1024px)" alt="Hero Desktop Image N° 2">
+        <img class="hero-image img2 none" src="./images/mobile-image-hero-2.jpg" alt="Hero Image Mobile N° 2">
+      </picture>
+      <picture>
+        <source srcset="./images/desktop-image-hero-2.jpg" media="(min-width: 1024px)" alt="Hero Desktop Image N° 3">
+        <img class="hero-image img3 none" src="./images/mobile-image-hero-3.jpg" alt="Hero Image Mobile N° 3">
+      </picture>
     </div>
 
     <section class="hero-description-container">
@@ -81,5 +94,6 @@
       </article>
       <img src="./images/image-about-light.jpg" alt="About us - Light Image">
     </section>
+   </main>
   </body>
 </html>

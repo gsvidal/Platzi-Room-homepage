@@ -21,39 +21,154 @@ html {
   font-size: 62.5%;
 }
 body {
+  min-width: 375px;
   font-size: 1.2rem;
+  font-weight: 600;
   font-family: 'Spartan', sans-serif;
-  min-width: 320px;
+  color: var(--dark-gray);
 }
 header {
-  position: absolute;
+  position: static;
   width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
 }
 header .icon-menu {
   display: inline-block;
   margin-left: 20px;
-  margin-top: 40px;
+  margin-top: 37px;
   width: 20px;
-  height: 20px;
+  height: 16px;
   background: url("../images/icon-hamburger.svg") center/cover no-repeat;
 }
 header .logo-img-container {
-  position: relative;
-  top: -20px;
-  min-width: 320px;
+  position: absolute;
+  top: 37px;
+  min-width: 375px;
   width: 100%;
   text-align: center;
 }
 header .menu-nav {
+  margin: auto 0;
+}
+header ul {
+    text-align: end;
+  margin-right: 20px;
+}
+header li {
+  display: inline;
+  padding: 12px;
+}
+header li a {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: 700;
+}
+.hero-picture-container {
+  width: 100%;  
+  height: 100%;
+}
+/* .hero-picture-container .hero-image-container {
+  width: 100%;  
+  height: 100%;
+} */
+.hero-picture-container .hero-image {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  min-width: 375px;
+}
+.none {
   display: none;
 }
-main .hero-image-container {
+.hero-description-container {
+  position: relative;
+  padding: 30px;
+  padding-top: 50px;
+}
+.hero-description-container .arrow-container {
+  display: flex;
+  position: absolute;
+  top: -60px;
+  right: 0px;
+  width: 120px;
+  height: 60px;
+  background-color: yellow;
+}
+.arrow--left-container, .arrow--right-container {
+  background-color: var(--black);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.arrow-container .arrow--left {
+  display: inline-block;
+  width: 15px;
+  height: 25px;
+  background: url("../images/icon-angle-left.svg") center/cover no-repeat;
+}
+.arrow-container .arrow--right {
+  display: inline-block;
+  width: 15px;
+  height: 25px;
+  background: url("../images/icon-angle-right.svg") center/cover no-repeat;
+}
+/* hacer el hover desde mobile ya que si se hace solo desde desktop al hacer ventana chikita en desktop no tendrá el efecto */
+.arrow--left-container:hover, .arrow--right-container:hover {
+  background-color: var(--very-dark-gray);
+}
+.hero-description-container h2 {
+  font-size: 2.5rem;
+  color: var(--black);
+}
+.hero-description-container p {
+  padding: 20px 0;
+  line-height: 2rem;
+}
+.hero-description-container .cta-button {
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 0;
+  margin: 20px 0;
+  text-transform: uppercase;
+  color: var(--very-dark-gray);
+  line-height: 1.6rem;
+  letter-spacing: .75rem;
+}
+.hero-description-container .cta-button:hover {
+  /* We use the property filter because reaches both <p> and <span> selectors, the color property only affects the <p> */
+  filter: brightness(0) saturate(100%) invert(78%) sepia(0%) saturate(13%) hue-rotate(185deg) brightness(84%) contrast(86%);
+
 
 }
-
-/* @media screen and (min-width: 500px) {
-  .hero-image-container .hero-image.img1 {
-    background-image: url("../images/desktop-image-hero-2.jpg");
-
-  }
-} */
+.hero-description-container .icon-arrow {
+  display: inline-block;
+  width: 45px;
+  height: 13px;margin-left: 30px;
+  background: url("../images/icon-arrow.svg") center/cover no-repeat;
+}
+.about-container {
+  width: 100%;
+}
+.about-container img {
+  width: 100%;
+  min-width: 375px;
+}
+.about-container article {
+  padding: 30px;
+  padding-top: 50px;
+  padding-bottom: 45px;
+}
+.about-container h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--black);letter-spacing: .5rem;
+  text-transform: uppercase;
+}
+.about-container p {
+  padding: 15px 0;
+  line-height: 2rem;
+}

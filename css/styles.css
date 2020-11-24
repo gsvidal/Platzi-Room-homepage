@@ -28,11 +28,12 @@ body {
   color: var(--dark-gray);
 }
 header {
-  position: static;
+  position: absolute;
   width: 100%;
   height: 90px;
   display: flex;
   justify-content: space-between;
+
 }
 header .icon-menu {
   display: inline-block;
@@ -43,11 +44,13 @@ header .icon-menu {
   background: url("../images/icon-hamburger.svg") center/cover no-repeat;
 }
 header .logo-img-container {
+  display: inline;
   position: absolute;
   top: 37px;
-  min-width: 375px;
-  width: 100%;
-  text-align: center;
+  left: calc(50% - 31px);
+  /* min-width: 375px; */
+  /* width: 100%; */
+  /* text-align: center; */
 }
 header .menu-nav {
   margin: auto 0;
@@ -64,6 +67,15 @@ header li a {
   text-decoration: none;
   color: var(--black);
   font-weight: 700;
+  cursor: pointer;
+}
+header li a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--black);
+  text-decoration-line: 5rem;
+  text-decoration-thickness: .25rem;
+  text-underline-offset: .5rem;
+ 
 }
 .hero-picture-container {
   width: 100%;  
@@ -103,6 +115,7 @@ header li a {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .arrow-container .arrow--left {
   display: inline-block;
@@ -137,12 +150,11 @@ header li a {
   color: var(--very-dark-gray);
   line-height: 1.6rem;
   letter-spacing: .75rem;
+  cursor: pointer;
 }
 .hero-description-container .cta-button:hover {
   /* We use the property filter because reaches both <p> and <span> selectors, the color property only affects the <p> */
   filter: brightness(0) saturate(100%) invert(78%) sepia(0%) saturate(13%) hue-rotate(185deg) brightness(84%) contrast(86%);
-
-
 }
 .hero-description-container .icon-arrow {
   display: inline-block;
@@ -171,4 +183,8 @@ header li a {
 .about-container p {
   padding: 15px 0;
   line-height: 2rem;
+}
+
+@media screen and (min-width: 800px) {
+
 }

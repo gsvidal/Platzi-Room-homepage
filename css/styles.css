@@ -30,6 +30,7 @@ body {
 header {
   position: absolute;
   width: 100%;
+  min-width: 375px;
   height: 90px;
   display: flex;
   justify-content: space-between;
@@ -112,11 +113,14 @@ header li a:hover {
   background-color: var(--black);
   width: 60px;
   height: 60px;
+  border: 1px solid var(--black);
+  outline: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
+
 .arrow-container .arrow--left {
   display: inline-block;
   width: 15px;
@@ -327,6 +331,7 @@ header li a:hover {
   .hero-description-container {
     /* padding: 0; */
     padding: 90px 70px 120px 70px;
+    max-height: 576px;
   }
   .hero-description-container h2 {
     font-size: 4.2rem;

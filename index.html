@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
+   <header>
       <i class="icon-menu" id="burger-menu"></i>
       <div class="logo-img-container">
         <img class="logo-img" src="./images/logo.svg" alt="Logo Room">
@@ -31,33 +31,33 @@
           </li>
         </ul>     
       </nav> 
-    </header>
-    <main>
+   </header>
+   <main>
       
     <div class="hero-picture-container">
-      <picture class="hero-image-container">
-        <source srcset="./images/desktop-image-hero-1.jpg" media="(min-width: 800px)" alt="Hero Desktop Image N° 1">
+      <picture id="hero-img-cont" class="hero-image-container">
+        <source srcset="./images/desktop-image-hero-1.jpg" media="(min-width: 600px)" alt="Hero Desktop Image N° 1">
         <img class="hero-image" src="./images/mobile-image-hero-1.jpg" alt="Hero Mobile Image N° 1">
       </picture>
-      <picture class="hero-image-container none">
-        <source srcset="./images/desktop-image-hero-2.jpg" media="(min-width: 800px)" alt="Hero Desktop Image N° 2">
+      <picture  id="hero-img-cont" class="hero-image-container none">
+        <source srcset="./images/desktop-image-hero-2.jpg" media="(min-width: 600px)" alt="Hero Desktop Image N° 2">
         <img class="hero-image" src="./images/mobile-image-hero-2.jpg" alt="Hero Image Mobile N° 2">
       </picture>
-      <picture class="hero-image-container none">
-        <source srcset="./images/desktop-image-hero-3.jpg" media="(min-width: 800px)" alt="Hero Desktop Image N° 3">
+      <picture  id="hero-img-cont" class="hero-image-container none">
+        <source srcset="./images/desktop-image-hero-3.jpg" media="(min-width: 600px)" alt="Hero Desktop Image N° 3">
         <img class="hero-image" src="./images/mobile-image-hero-3.jpg" alt="Hero Image Mobile N° 3">
       </picture>
     </div>
     
     <div class="hero-description-section-container">
-    <section class="hero-description-container">
+    <section id="hero-descr-cont" class="hero-description-container">
       <div class="arrow-container">
-        <div class="arrow--left-container">
+        <button id="arrow-left" class="arrow--left-container">
         <span class="arrow arrow--left"></span>
-        </div>
-        <div class="arrow--right-container">
+        </button>
+        <button id="arrow-right" class="arrow--right-container">
         <span class="arrow arrow--right"></span>
-        </div>
+        </button>
       </div>
       
       <h2>Discover innovative ways to decorate</h2> 
@@ -69,11 +69,15 @@
       
     </section>
 
-    <section class="hero-description-container none">
-    <div class="arrow-container">
-      <span class="arrow arrow--left"></span>
-      <span class="arrow arrow--right"></span>
-    </div>
+    <section  id="hero-descr-cont" class="hero-description-container none">
+      <div class="arrow-container">
+        <button id="arrow-left" class="arrow--left-container">
+        <span class="arrow arrow--left"></span>
+        </button>
+        <button id="arrow-right" class="arrow--right-container">
+        <span class="arrow arrow--right"></span>
+        </button>
+      </div>
 
     <h2>We are available all across the globe</h2>  
 
@@ -82,11 +86,17 @@
     <p class="cta-button" >Shop now <span class="icon-arrow" ></span> </p>
     </section>  
 
-    <section class="hero-description-container none">
-    <div class="arrow-container">
-      <span class="arrow arrow--left"></span>
-      <span class="arrow arrow--right"></span>
-    </div>
+    <section  id="hero-descr-cont" class="hero-description-container none">
+      
+      <div class="arrow-container">
+        <button id="arrow-left" class="arrow--left-container">
+        <span class="arrow arrow--left"></span>
+        </button>
+        <button id="arrow-right" class="arrow--right-container">
+        <span class="arrow arrow--right"></span>
+        </button>
+      </div>
+
     <h2>Manufactured with the best materials</h2> 
     
     <p>Our modern furniture store provide a
@@ -110,6 +120,7 @@
       <img src="./images/image-about-light.jpg" alt="About us - Light Image">
     </section>
    
-    </main>
+   </main>
+   <script src="./index.js"></script>
   </body>
 </html>

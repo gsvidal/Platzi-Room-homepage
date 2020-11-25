@@ -27,13 +27,29 @@ body {
   font-family: 'Spartan', sans-serif;
   color: var(--dark-gray);
 }
-header {
+#header {
   position: absolute;
+  top: 0;
   width: 100%;
   min-width: 375px;
   height: 90px;
   display: flex;
   justify-content: space-between;
+  /* background-color: var(--white); */
+
+}
+#header.headerS {
+  position: fixed; 
+  z-index: 2;
+  background-color: var(--white);
+}
+.dark-filter {
+  position: fixed;
+  top: 90px;
+  z-index: 3;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0, .5);
 
 }
 header .icon-menu {
@@ -43,6 +59,10 @@ header .icon-menu {
   width: 20px;
   height: 16px;
   background: url("../images/icon-hamburger.svg") center/cover no-repeat;
+  cursor: pointer;
+}
+header .icon-menu.iconX-menu {
+  background: url("../images/icon-close.svg") center/cover no-repeat;
 }
 header .logo-img-container {
   display: inline;
@@ -175,8 +195,9 @@ header li a:hover {
   min-width: 375px;
 }
 .about-container img:last-of-type {
-  position: relative;
-  top: 10px;
+  /* position: relative;
+  top: 10px; */
+  z-index: 1;
 }
 .about-container article {
   padding: 30px;

@@ -30,6 +30,7 @@ buttonLeft.forEach(function(button) {
 buttonRight.forEach(function(button) {
   button.addEventListener("click", nextSlide); 
 });
+document.addEventListener("keyup", keyPressed);
 
 function burgerMenu() {
   cont ++;
@@ -79,7 +80,14 @@ function prevSlide() {
     } 
 }    
 
-
+function keyPressed(event) {
+  if(event.keyCode === 39) {
+    nextSlide();
+  }
+  if(event.keyCode === 37) {
+    prevSlide();
+  }
+}
 
   
 
